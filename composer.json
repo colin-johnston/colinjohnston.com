@@ -23,7 +23,7 @@
   },
   "require": {
     "php": ">=7.1.0",
-    "getkirby/cms": "3.5.7",
+    "getkirby/cms": "3.5.8.2",
     "bnomei/kirby3-dotenv": "^1.2",
     "pedroborges/kirby-meta-tags": "^2.0",
     "bnomei/kirby3-feed": "^1.3"
