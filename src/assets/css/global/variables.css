@@ -1,0 +1,75 @@
+/* Global variables */
+:root {
+  --gutter: var(--space-s-m);
+  --border-radius: 0.75rem;
+  --border-radius-inner: 0.5rem;
+  --transition-base: 250ms ease;
+  --transition-movement: 200ms linear;
+  --transition-fade: 200ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5);
+  --wrapper-width: clamp(16rem, 92vw, 85rem);
+
+  --font-base: "Inter";
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+
+  /* TEMP Andy Bell's Color Pallete  */
+  --color-dark: #252525;
+  --color-light: #f9f9f9;
+  --color-pale: #9199a4;
+  --color-mid: #5b6470;
+  --color-mid-glare: #b3b3b3;
+  --color-primary: #089ce7;
+  --color-primary-shade: #167caf;
+  --color-primary-glare: #83c7ea;
+  /* CSS Variables generated from Kigen.design */
+  --brand-50: #edf1f6;
+  --brand-100: #d4ddeb;
+  --brand-200: #acbfd9;
+  --brand-300: #88a5c9;
+  --brand-400: #718cae;
+  --brand-500: #5e7591;
+  --brand-600: #4c5f77;
+  --brand-700: #3e4e62;
+  --brand-800: #2b3746;
+  --brand-900: #171e28;
+  --brand-950: #0c1118;
+
+  /* TEMP Andy Bell's Modular Scale - create custom here https://utopia.fyi/space/calculator/*/
+  --space-zero: clamp(0rem, -0.02rem + 0.11vw, 0.0625rem);
+  --space-2xs: clamp(0.25rem, 0.16rem + 0.43vw, 0.5rem);
+  --space-xs: clamp(0.75rem, 0.71rem + 0.22vw, 0.875rem);
+  --space-s: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
+  --space-m: clamp(1.5rem, 1.43rem + 0.33vw, 1.6875rem);
+  --space-l: clamp(2rem, 1.91rem + 0.43vw, 2.25rem);
+  --space-xl: clamp(3rem, 2.87rem + 0.65vw, 3.375rem);
+  --space-2xl: clamp(4rem, 3.83rem + 0.87vw, 4.5rem);
+  --space-3xl: clamp(5rem, 4.78rem + 1.09vw, 5.625rem);
+  --space-4xl: clamp(6rem, 5.74rem + 1.3vw, 6.75rem);
+  --space-xs-s: clamp(0.75rem, 0.62rem + 0.65vw, 1.125rem);
+  --space-s-m: clamp(1rem, 0.76rem + 1.2vw, 1.6875rem);
+  --space-s-l: clamp(1rem, 0.57rem + 2.17vw, 2.25rem);
+  --space-m-l: clamp(1.5rem, 1.24rem + 1.3vw, 2.25rem);
+  --space-l-xl: clamp(2rem, 1.52rem + 2.39vw, 3.375rem);
+  --space-xl-2xl: clamp(3rem, 2.48rem + 2.61vw, 4.5rem);
+  --space-2xl-3xl: clamp(4rem, 3.43rem + 2.83vw, 5.625rem);
+  --space-3xl-4xl: clamp(5rem, 4.39rem + 3.04vw, 6.75rem);
+  --size-base: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
+  --size-step-0: clamp(0.8125rem, 0.79rem + 0.11vw, 0.875rem);
+  --size-step-1: clamp(1.1875rem, 1.12rem + 0.33vw, 1.375rem);
+  --size-step-2: clamp(1.4375rem, 1.33rem + 0.54vw, 1.75rem);
+  --size-step-3: clamp(1.6875rem, 1.51rem + 0.87vw, 2.1875rem);
+  --size-step-4: clamp(2.0625rem, 1.85rem + 1.09vw, 2.6875rem);
+
+  --gutter: var(--space-s-m);
+
+  /* --sidebar-target-width: 25rem; */
+  --sidebar-target-width: clamp(18rem, 25vw, 25rem);
+  --sidebar-content-min-width: 64%;
+
+  /* --site-header-brand: 2.5rem; */
+  /* --site-header-brand: var(--space-l-xl); */
+  --site-header-brand: var(--size-step-4);
+  --site-header-repel: var(--space-xs);
+}

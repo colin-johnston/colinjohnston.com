@@ -1,0 +1,23 @@
+.site-header {
+  /* margin-bottom: var(--space-m); */
+  /* position: fixed;
+  top: 0; */
+}
+
+.site-header .repel {
+  --gutter: 0.5rem var(--site-header-repel);
+  padding-block: var(--site-header-repel);
+}
+
+.site-header nav ul {
+  margin: 0;
+}
+
+.site-header__brand {
+  display: inline-block;
+  font-size: var(--site-header-brand);
+  /* font-size: var(--space-m-l); */
+  height: calc(var(--site-header-brand) * 1.3);
+  /* height: var(--space-l-xl); */
+  color: var(--color-mid);
+}

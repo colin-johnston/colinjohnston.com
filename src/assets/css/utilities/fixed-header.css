@@ -1,0 +1,15 @@
+.fixed-header {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background-color: var(--color-pale);
+}
+
+.fixed-header + main {
+  /* margin-top: var(--space-4xl); */
+  margin-top: calc(
+    calc(var(--site-header-brand) * 2) + calc(var(--site-header-repel) * 2)
+  );
+}

@@ -1,0 +1,84 @@
+@import "global/reset";
+@import "global/fonts";
+@import "global/variables";
+@import "global/global-styles.css";
+
+@import-glob 'blocks/*.css';
+@import-glob 'compositions/*.css';
+@import-glob 'utilities/*.css';
+
+/* Temp - Back Soon */
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: var(--brand-800);
+    background: var(--brand-50);
+  }
+  .social-icons svg {
+    color: var(--brand-200);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--brand-100);
+    background: var(--brand-900);
+  }
+  .social-icons svg {
+    color: var(--brand-500);
+  }
+}
+
+body {
+  padding-bottom: 5vh;
+}
+
+.center-grid {
+  display: grid;
+  place-content: center;
+  gap: 4rem;
+}
+
+.wrapper {
+  width: 48rem;
+  max-width: 100vw;
+}
+
+header {
+  text-align: center;
+  > a {
+    width: 20rem;
+    display: inline-block;
+  }
+  svg {
+    color: #4c5f77;
+  }
+}
+
+article {
+  text-align: center;
+  h1 {
+    margin: 0 0 2rem 0;
+  }
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-l);
+  align-items: var(--cluster-vertical-alignment, center);
+  justify-content: var(--cluster-horizontal-alignment, center);
+}
+
+.social-icons a {
+  mix-blend-mode: luminosity;
+}
+
+.social-icons a:hover {
+  mix-blend-mode: normal;
+}
+
+.social-icons svg {
+  width: var(--space-l);
+  height: var(--space-l);
+}

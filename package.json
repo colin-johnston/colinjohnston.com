@@ -1,0 +1,31 @@
+{
+  "name": "colinjohnston.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "watch": "npx @11ty/eleventy --watch",
+    "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-dev-server": "^2.0.8"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "cssnano": "^7.0.6",
+    "feather-icons": "^4.29.2",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0",
+    "postcss-import-ext-glob": "^2.1.1"
+  }
+}
