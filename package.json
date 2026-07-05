@@ -8,7 +8,7 @@
     "start": "concurrently 'eleventy --serve' 'npm run css'",
     "watch": "npx @11ty/eleventy --watch",
     "serve": "npx @11ty/eleventy --serve",
-    "build": "concurrently 'eleventy --build' 'npm run css'",
+    "build": "concurrently 'npx @11ty/eleventy --build' 'npm run css'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
