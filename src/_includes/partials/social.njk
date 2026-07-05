@@ -1,16 +1,18 @@
 {# See https://www.11ty.dev/docs/plugins/image/ for Image plugin reference #}
 
+{# Figure out shortcodes ASAP https://github.com/madrilene/eleventy-excellent/tree/main/src/_config/shortcodes #}
+
 <div class="social-icons">
   <a href="https://bsky.app/profile/colinjohnston.com" aria-label="Follow me on Bluesky">
-    <img src="/bluesky-logo.svg">
+    {% svg "bluesky-logo" %}
   </a>
   <a href="https://mastodon.social/@colinjohnston" aria-label="Follow me on Mastodon">
-    <img src="/mastodon-logo.svg">
+    {% svg "mastodon-logo" %}
   </a>
   <a href="https://www.threads.com/@colinjohnston" aria-label="Follow me on Threads">
-    <img src="/threads-logo.svg">
+    {% svg "threads-logo" %}
   </a>
   <a href="https://instagram.com/colinjohnston" aria-label="Follow me on Instagram">
-    <img src="/instagram-logo.svg">
+    {% svg "instagram-logo" %}
   </a>
 </div>
