@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css": "postcss src/assets/css/*.css --dir dist/assets/css --watch --verbose",
-    "start": "concurrently 'eleventy --serve' 'npm run css'",
+    "css": "postcss src/assets/css/*.css --dir dist/assets/css --verbose",
+    "css:watch": "postcss src/assets/css/*.css --dir dist/assets/css --watch --verbose",
+    "start": "concurrently 'eleventy --serve' 'npm run css:watch'",
     "watch": "npx @11ty/eleventy --watch",
     "serve": "npx @11ty/eleventy --serve",
     "build": "concurrently 'npx @11ty/eleventy' 'npm run css'",
