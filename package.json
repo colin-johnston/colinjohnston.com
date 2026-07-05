@@ -18,9 +18,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.6",
     "@11ty/eleventy-dev-server": "^2.0.8",
-    "@11ty/eleventy-img": "^6.0.4"
-  },
-  "devDependencies": {
+    "@11ty/eleventy-img": "^6.0.4",
     "concurrently": "^9.1.2",
     "cssnano": "^7.0.6",
     "feather-icons": "^4.29.2",
