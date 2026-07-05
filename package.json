@@ -17,8 +17,8 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "@11ty/eleventy-img": "^6.0.4",
-    "@11ty/eleventy-dev-server": "^2.0.8"
+    "@11ty/eleventy-dev-server": "^2.0.8",
+    "@11ty/eleventy-img": "^6.0.4"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
@@ -27,6 +27,7 @@
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.0",
-    "postcss-import-ext-glob": "^2.1.1"
+    "postcss-import-ext-glob": "^2.1.1",
+    "svgo": "^4.0.1"
   }
 }
