@@ -1,9 +1,11 @@
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 
+import shortcodes from './src/_config/shortcodes.js';
+
 export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // output image formats
-    formats: ['avif', 'webp', 'jpeg', 'svg'],
+    formats: ['avif', 'webp', 'jpeg'],
     // output image widths
     widths: ['auto'],
   });
@@ -27,6 +29,8 @@ export default async function (eleventyConfig) {
   // eleventyConfig.addLayoutAlias('page', 'page.njk');
   // eleventyConfig.addLayoutAlias('post', 'post.njk');
   // eleventyConfig.addLayoutAlias('tags', 'tags.njk');
+
+  eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
 
   return {
     dir: {
