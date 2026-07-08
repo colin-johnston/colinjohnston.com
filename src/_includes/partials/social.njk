@@ -3,16 +3,9 @@
 {# Figure out shortcodes ASAP https://github.com/madrilene/eleventy-excellent/tree/main/src/_config/shortcodes #}
 
 <div class="social-icons">
-  <a href="https://bsky.app/profile/colinjohnston.com" aria-label="Follow me on Bluesky">
-    {% svg "bluesky-logo" %}
-  </a>
-  <a href="https://mastodon.social/@colinjohnston" aria-label="Follow me on Mastodon">
-    {% svg "mastodon-logo" %}
-  </a>
-  <a href="https://www.threads.com/@colinjohnston" aria-label="Follow me on Threads">
-    {% svg "threads-logo" %}
-  </a>
-  <a href="https://instagram.com/colinjohnston" aria-label="Follow me on Instagram">
-    {% svg "instagram-logo" %}
-  </a>
+  {% for social in socials %}
+    <a href="https://{{ social.url }}/{{ social.username }}" aria-label="{{ social.label }}">
+      {% svg social.platform + "-logo" %}
+    </a>
+  {% endfor %}
 </div>
